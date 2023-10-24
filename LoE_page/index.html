@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Land of Eem</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="main-menu">
+      <div class="main-menu__row">
+        <a class="cl-pink" href="#">Основное</a>
+        <a class="cl-orange" href="#">Создание персонажа</a>
+        <a class="cl-blue" href="#">Предметы и экипировка</a>
+        <a class="cl-green" href="#">Приключения</a>
+        <a class="cl-violet" href="#">Бестиарий</a>
+      </div>
+      <div class="main-menu__shadow"></div>
+    </nav>
+  </header>
+  <main>
+    <div class="content">
+      <section class="content__block">
+        <h1>Механика кубов</h1>
+        <article class="content__block column-block">
+          <div class="content__block_item">
+            <p>
+              Каждый раз, когда ПИ делает что-то, результат чего неочевиден, он должен сделать <span
+                class="span-lighting">проверку</span>, чтобы узнать, что произойдет. Проверки могут проводиться со
+              стороны игрока (используя способности ПИ) и со стороны мастера (мастер принимает решение сам).
+              Чтобы сделать проверку, выполните <span class="span-lighting">бросок&nbsp;1d12</span>, добавляя или
+              вычитая соответствующий модификатор <span class="span-lighting">навыка</span>. Результат определяет успех
+              или неудачу совершённого действия.
+            </p>
+          </div>
+          <div class="content__block_item">
+            <table class="content__block table-min">
+              <thead>
+                <tr>
+                  <th colspan="2">бросок 1d12 + навык</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1-2</td>
+                  <td>Полный провал</td>
+                </tr>
+                <tr>
+                  <td>3-5</td>
+                  <td>Неудача с плюсом</td>
+                </tr>
+                <tr>
+                  <td>6-8</td>
+                  <td>Успех с минусом</td>
+                </tr>
+                <tr>
+                  <td>9-11</td>
+                  <td>Успех</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Абсолютный успех</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content__block_item">
+            <h2 class="title">ИНТЕРПРЕТАЦИЯ РЕЗУЛЬТАТОВ</h2>
+            <p>
+              Существует 5 результатов проверки. Как правило, интерпретировать получившиеся результаты должен ГМ, но
+              вклад других игроков также приветствуется и поощряется. В конце концов, интерпретация результатов часто
+              требует творческого мышления и импровизации, и в таких ситуациях две головы
+              лучше, чем одна!
+            </p>
+          </div>
+          <div class="content__block_item">
+            <h2 class="subtitle">1-2 Полный провал</h2>
+            <p>Действие заканчивается неудачей и что-то еще идет не так в процессе.</p>
+            <div class="example">
+              <p><b>Например:</b></p>
+              <ul>
+                <li><b>Взлом запертой двери: </b>персонажу не удается вскрыть замок, стража наготове.</li>
+                <li><b>Обман охранников: </b>персонаж не обманул охранников и они угрожают взять его под стражу.</li>
+                <li><b>Побег от охраны: </b> персонаж пойман и попадает в тюрьму.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__block_item">
+            <h2 class="subtitle">3-5 Неудача с плюсом</h2>
+            <p>Действие заканчивается неудачей, но с выгодой или положительным моментом.</p>
+            <div class="example">
+              <p><b>Например:</b></p>
+              <ul>
+                <li><b>Взлом запертой двери: </b>персонажу не удается вскрыть замок, но он находит более рискованный
+                  путь внутрь.</li>
+                <li><b>Обман охранников: </b>персонаж не сумел заговорить охранников, но у него появился шанс стащить
+                  ключ.</li>
+                <li><b>Побег от охраны: </b>персонаж пойман, но встречает старого друга в тюрьме.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__block_item">
+            <h2 class="subtitle">6-8 Успех с минусом</h2>
+            <p>Действие удается, но с осложнениями.</p>
+            <div class="example">
+              <p><b>Например:</b></p>
+              <ul>
+                <li><b>Взлом запертой двери: </b>персонаж вскрывает замок, но так шумно, что привлекает лишнее внимание.
+                </li>
+                <li><b>Обман охранников: </b>персонаж заговорил охранников, но теперь они более бдительны.</li>
+                <li><b>Побег от охраны: </b>персонаж спасается, но случайно теряет важный предмет позади.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__block_item">
+            <h2 class="subtitle">9-11 Успех</h2>
+            <p>Действие успешно!</p>
+            <div class="example">
+              <p><b>Например:</b></p>
+              <ul>
+                <li><b>Взлом запертой двери: </b>персонаж легко вскрывает замок.</li>
+                <li><b>Обман охранников: </b>персонаж обхитрил охрану.</li>
+                <li><b>Побег от охраны: </b>персонаж спасается.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__block_item">
+            <h2 class="subtitle">12+ Полный успех</h2>
+            <p>Действие удается и происходит что-то хорошее!</p>
+            <div class="example">
+              <p><b>Например:</b></p>
+              <ul>
+                <li><b>Взлом запертой двери: </b>персонаж взламывает замок в подходящий момент.</li>
+                <li><b>Обман охранников: </b>персонаж заговорил стражу и они безоговорочно ему доверяют.</li>
+                <li><b>Побег от охраны: </b>персонаж убегает, не оставляя следов и теряя преследователей.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="content__block_item">
+            <div class="curly-border">
+              <h2 class="subtitle">ДВИГАЙТЕ ИСТОРИЮ ВПЕРЕД</h2>
+              <p>Помните, что каждая проверка должна двигать историю вперед, в идеале драматичным образом. В результате
+                проверки должны происходить интересные вещи. Негативные или позитивные последствия неудачных действий
+                никогда не должны заводить повествование в тупик.</p>
+              <p>Игроки не могут повторять броски неудачных проверок. Предполагается, что ПИ старался изо всех сил, но
+                теперь ситуация двигается в другом направлении. Со сковороды - в огонь!</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <aside class="side-menu">
+        <div class="side-menu__content">
+          <div class="side-menu__content_switch">
+            <span class="side-menu__content_switch_rotate">></span>
+          </div>
+          <ul class="side-menu__content_ul">
+            <li><a href="#">текст</a></li>
+            <li><a href="#">текст и текст</a></li>
+            <li>
+              <a href="#">конец текст</a>
+              <ul>
+                <li><a href="#">текст</a></li>
+                <li><a href="#">текст и текст</a></li>
+                <li><a href="#">конец текст</a></li>
+              </ul>
+            </li>
+            <li><a href="#">текст</a></li>
+            <li><a href="#">текст и текст</a></li>
+            <li>
+              <a href="#">конец текст</a>
+              <ul>
+                <li><a href="#">текст</a></li>
+                <li><a href="#">текст и текст</a></li>
+                <li><a href="#">конец текст</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="side-menu__cover"></div>
+      </aside>
+      <button class="to-top">^</button>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

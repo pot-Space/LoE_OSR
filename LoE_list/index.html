@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>character sheet template</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <section class="header-column">
+      <div class="class-name">
+        <h1 class="class-name__text">Бродяга</h1>
+      </div>
+      <div class="charlist-settings">
+        <div class="charlist-settings__btn">
+          <svg id="addnew" title="Создать" width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 17H16M8 13H14M9 4.5H5V21H19V4.5H15M9 4.5V6H15V4.5M9 4.5V3H15V4.5" stroke="#000000"
+              stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="charlist-settings__description">Создать</div>
+        </div>
+
+        <div class="charlist-settings__btn">
+          <svg id="download" width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3"
+              stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="charlist-settings__description">Загрузить</div>
+        </div>
+
+        <div class="charlist-settings__btn">
+          <svg id="save" width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15 20V15H9V20M18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4H14.1716C14.702 4 15.2107 4.21071 15.5858 4.58579L19.4142 8.41421C19.7893 8.78929 20 9.29799 20 9.82843V18C20 19.1046 19.1046 20 18 20Z"
+              stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="charlist-settings__description">Сохранить</div>
+        </div>
+      </div>
+      <div class="spending-xp">
+        <table class="spending-xp__table">
+          <tr>
+            <td>
+              <span class="spending-xp__table_text">Повышение<br />навыков</span>
+            </td>
+            <td><span class="spending-xp__table_text">-2 в -1</span>1xp</td>
+            <td><span class="spending-xp__table_text">-1 в 0</span>2xp</td>
+            <td><span class="spending-xp__table_text">0 в 1</span>4xp</td>
+            <td><span class="spending-xp__table_text">1 в 2</span>8xp</td>
+            <td><span class="spending-xp__table_text">2 в 3</span>12xp</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="spending-xp__table_text">Повышение<br />хар-к</span>
+            </td>
+            <td>
+              <span class="spending-xp__table_text">+5 храбрость</span>
+              <label class="checkbox-style">
+                <input type="checkbox" />
+                <div class="checkbox-style__checkmark"></div>
+                <div class="checkbox-style__body"><b>20 XP</b></div>
+              </label>
+            </td>
+            <td>
+              <span class="spending-xp__table_text">+1 Атака</span>
+              <label class="checkbox-style">
+                <input type="checkbox" />
+                <div class="checkbox-style__checkmark"></div>
+                <div class="checkbox-style__body"><b>25 XP</b></div>
+              </label>
+            </td>
+            <td>
+              <span class="spending-xp__table_text">-1 Защита</span>
+              <label class="checkbox-style">
+                <input type="checkbox" />
+                <div class="checkbox-style__checkmark"></div>
+                <div class="checkbox-style__body"><b>25 XP</b></div>
+              </label>
+            </td>
+            <td>
+              <span class="spending-xp__table_text">+1 Квест</span>
+              <label class="checkbox-style">
+                <input type="checkbox" />
+                <div class="checkbox-style__checkmark"></div>
+                <div class="checkbox-style__body"><b>20 XP</b></div>
+              </label>
+            </td>
+            <td>
+              <span class="spending-xp__table_text">+1 Ужас</span>
+              <label class="checkbox-style">
+                <input type="checkbox" />
+                <div class="checkbox-style__checkmark"></div>
+                <div class="checkbox-style__body"><b>20 XP</b></div>
+              </label>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="lv-xp">
+        <div class="lv">
+          <div class="lv-xp__text">Lvl</div>
+          <input class="lv-xp__input" type="text" maxlength="2" placeholder="1" />
+        </div>
+        <div class="xp">
+          <div class="lv-xp__text">XP</div>
+          <input class="lv-xp__input" type="text" maxlength="2" placeholder="0" />
+        </div>
+      </div>
+    </section>
+    <aside class="addnew-menu">
+      <div class="addnew-menu__items"></div>
+      <div class="addnew-menu__close"></div>
+    </aside>
+  </header>
+  <main class="body-column">
+    <!-- <div class="column__background"></div> -->
+    <section class="perks">
+      <h2 class="perks__header">Особенности</h2>
+      <div class="perks__body"></div>
+      <div class="perks__footer">Играй за Бродягу, если хочешь быть хитрым плутом, который легко попадает в неприятности
+        (и выпутывается из них).</div>
+    </section>
+    <section class="abilities">
+      <h2 class="abilities__header">Умения</h2>
+      <h3 class="abilities__subtitle">Персонаж может использовать обе способности своего текущего уровня, но сохраняют
+        только одну при переходе на следующий уровень</h3>
+      <div class="abilities__body">
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 1</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Акт исчезновения: </b>Проверка Скрытность: Раз в сессию спрячься у
+                всех на виду - даже, казалось бы, в невозможных обстоятельствах.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Липкие пальцы: </b>Проверка Проворство: Раз в сессию укради у NPC
+                предмет и придумай его согласно таблице "Мирские предметы" (стр.86 CB).</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 2 (4xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Рогатка: </b>Проверка Проворство: Раз в сессию используй рогатку,
+                чтобы выстрелить во что-нибудь с высокой точностью ради полезного или повествовательного эффекта.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Вывести из себя: </b>Проверка Запугивание: Раз в сессию вне конфликта
+                сделай уродливое лицо или что-то грубое, чтобы отпугнуть или разозлить нескольких Головорезов, Громилу
+                или Чемпиона.</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 3 (8xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Завсегдатай баров: </b>Проверка Королевств: Раз в сессию придумай
+                таверну, которую можно посетить в Землях Иим, даже в глуши. Бармен ответит на любой вопрос, а также там
+                будет хотя бы один случайный NPC.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Рекрут: </b>Проверка Обаяние: Раз в бой при выпадении 6+, переманить
+                головореза на сторону Бродяги до конца боя.</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 4 (12xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Взмолиться: </b>Проверка Обман: Раз в сессию бесстыдно моли, чтобы
+                получить что-нибудь. Или попробуй унизительно избежать боя до его начала большой ценой.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body">
+                <b>Скользкий: </b>Проверка Проворство: Раз в бой при выпадении 9+ перенаправь все атаки противника
+                против Бродяги на другого случайного противника поблизости. Если Бродяга убегает или прячется от боя, он
+                восстанавливает 1d6 Храбрости, но получает 1d6 Ужаса, если возвращается.
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 5 (16xp)</h3>
+          <h3 class="skill_text-header">Выбери еще один идеал и недостаток</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Банда: </b>Проверка Королевств: Раз в сессию призовите группу плутов
+                на помощь в выполнении задания. Они особенно искусны в кражах, взломах и мошенничестве.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body">
+                <b>Удар в спину : </b>Атака: Раз в бой нанести удар в спину не знающему противнику:
+                <ul>
+                  <li>1-2 Промах!</li>
+                  <li>3-5 Попадание!</li>
+                  <li>6-8 Попадание с Ужасом x2!</li>
+                  <li>9-11 Попадание с Ужасом x3!</li>
+                  <li>12+ Попадание с Ужасом х3 и максимальным результатом!</li>
+                </ul>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 6 (20xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Теневой контакт: </b>Проверка Королевств: Раз в сессию создай контакт
+                с кем-то с плохой или сомнительной репутацией, который может оказать помощь или дать совет.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Мошенник: </b>Проверка Обман: Раз в сессию подтолкни NPC к раскрытию
+                скрываемой или секретной информации во время разговора.</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 7 (25xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Распространение слухов: </b>Проверка Обман: Раз в сессию распространи
+                по всем землям слух, в котором нужно долго копать, чтобы не поверить. Результат см. в таблице (стр. 48).
+              </div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Подкуп: </b>Проверка Обаяние: Раз в сессию подкупи NPC, фактически не
+                используя имеющиеся в наличии монеты.</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 8 (35xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body">
+                <b>Язвительная насмешка: </b>Проверка Запугивание: Раз в бой выбери и оскорби противника:
+                <ul>
+                  <li>1-2 Насмешка провалена, и теперь противник сосредоточен на Бродяге.</li>
+                  <li>3-5 Насмешка провалена, и противник смеётся над Бродягой.</li>
+                  <li>6-8 Храбрость Головореза уменьшается до 0 или храбрость Громилы уменьшается вдвое.</li>
+                  <li>9+ Храбрость Головореза уменьшается до 0, храбрость Громилы уменьшается вдвое или причините 1d12
+                    Ужаса Чемпиону.</li>
+                </ul>
+              </div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Обвинение: </b>Проверка Обман: Раз в сессию придумай историю,
+                обвиняющую кого-то (или что-то) другого в проступке, правонарушении или несчастном случае, даже если она
+                может быть абсурдной.</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 9 (45xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Акробат: </b>Проверка Проворство: Раз в сессию соверши эффектный
+                акробатический финт, превышающий обычные возможности. Раз в бой при выпадении 9+ переместись, чтобы
+                нанести Удар в спину ближайшему осведомленному противнику.</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body">
+                <b>Тайное убежище: </b>Проверка Королевств: Раз в сессию отправься в тайное убежище плутов, чтобы
+                укрыться. Все преследователи Бродяги и его союзников теряют след. В убежище находится скупщиком
+                краденого, торгующий незаконными товарами, и три случайных NPC, которые делятся слухами.
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h3 class="skill_textline-header">Lvl 10 (60xp)</h3>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body"><b>Высокие ставки: </b>Проверка Обман: Раз в сессию убеди NPC или уладь
+                конфликт с противником с помощью азартной игры. Результат игры см. в таблице (стр. 49).</div>
+            </label>
+          </div>
+          <div class="skill__body">
+            <label class="checkbox-style">
+              <input type="checkbox" />
+              <div class="checkbox-style__checkmark"></div>
+              <div class="checkbox-style__body">
+                <b>Бесславный: </b>Выбери героический титул из списка и подставь в него Родину Бродяги или другую
+                область по выбору. Преимущества см. на (стр. 49).
+                <ul>
+                  <li>
+                    Плутоватый Рыцарь из <b><span contenteditable="true">______</span></b>
+                  </li>
+                  <li>
+                    Безмолвный Саван из <b><span contenteditable="true">______</span></b>
+                  </li>
+                  <li>
+                    Объявленный вне закона Разбойник из <b><span contenteditable="true">______</span></b>
+                  </li>
+                </ul>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
